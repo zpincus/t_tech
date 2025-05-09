@@ -1,0 +1,12 @@
+[project]
+    name = "t_tech"
+    channels = ["conda-forge"]
+    platforms = ["linux-64", "osx-64", "osx-arm64"]
+
+[dependencies]
+    python = "*"
+    pandas = "*"
+    seaborn = "*"
+    scipy = "*"
+    pip = "*"
+    natsort = "*"
