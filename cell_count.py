@@ -71,5 +71,5 @@ def yn_test(group):
                           mean_diff_ci=mean_diff_ci_formatted))
 
 # and print the results
-with pd.option_context('display.width', 100):
+with pd.option_context('display.width', 150, 'display.max_columns', None):
     print(response_percent.groupby('population').apply(yn_test, include_groups=False))
