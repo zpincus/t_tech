@@ -1,5 +1,5 @@
 ## Running
-To run, unzip the project and execute the `run.sh` script (or do `bash run.sh`). Because package management is not portable across *nix variants, this assumes that recent versions of `python` and `pip` are available on the path. Beyond that, the script will use `pip` to install the required libraries if not present and then run `cell_count.py` which does the following:
+To run, download and unzip `t_tech.zip` and execute the `run.sh` script (or do `bash run.sh`). Because package management is not portable across *nix variants, this assumes that recent versions of `python` and `pip` are available on the path. Beyond that, the script will use `pip` to install the required libraries if not present and then run `cell_count.py` which does the following:
 1. Produce the requested output csv, here saved as `cell-count-percentage.csv`.
 2. Produce the requested plots (but see notes below), saved as `cell-count-response.csv`
 3. Produce a table of relevant statistics (to stdout) for the answer to question 2b.
