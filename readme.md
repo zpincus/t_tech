@@ -113,8 +113,7 @@ I included a pixi environment specification in this project; if you already have
   ```
   SELECT condition, COUNT(*) FROM sample GROUP BY condition;
   ```
-  But to do it properly we first select all unique `(subject, condition)` pairs to avoid double-counting samples (within a condition), and then
-  group by counts:
+  But to do it properly we first select all unique `(subject, condition)` pairs to avoid double-counting samples (within a condition), and then group by conditions:
   ```
   SELECT condition, COUNT(*) FROM (SELECT DISTINCT subject, condition FROM sample) GROUP BY condition;
   ```
